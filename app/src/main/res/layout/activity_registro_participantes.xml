@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistroParticipantesActivity">
+
+    <EditText
+        android:id="@+id/reg_cedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cedula"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/reg_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/reg_apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/reg_activo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Activo"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/regDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="registrarParticipante"
+        android:text="REGISTRAR" />
+
+</LinearLayout>
