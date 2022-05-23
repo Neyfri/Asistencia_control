@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Asistencia_control</string>
+    <string name="cedula">Cedula</string>
+    <string name="hora_de_entrada">Hora de Entrada</string>
+    <string name="fecha">Fecha</string>
 </resources>

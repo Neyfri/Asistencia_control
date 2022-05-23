@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Asistencia_control">
         <activity
+            android:name=".VerAsistenciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroEntradaActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegistrarSalidaActivity"
             android:exported="false" />
         <activity

@@ -85,9 +85,10 @@ public class RegistrarSalidaActivity extends AppCompatActivity {
         DBHelper admin = new DBHelper(this,"control_asistencia",null,1);
         SQLiteDatabase db=admin.getReadableDatabase();
         String[] parameter={salida.getText().toString()};
+        String fecha = new SimpleDateFormat("yyyy,MM,dd").format(new Date());
 
         try{
-            Cursor fila=db.rawQuery("SELECT fecha FROM lista_asistencia WHERE cedula=? ",parameter);
+            Cursor fila=db.rawQuery("SELECT fecha FROM lista_asistencia WHERE fecha= " +fecha+" AND cedula=? ",parameter);
 
             if(fila.moveToFirst()){
                 Toast.makeText(this, "Cargando..."+fila.getString(1), Toast.LENGTH_LONG).show();

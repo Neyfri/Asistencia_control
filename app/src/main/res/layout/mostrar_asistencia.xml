@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:src="@drawable/ic_baseline_person_black"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/gray"
+            app:civ_border_overlay="true"/>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/profileIv"
+            android:layout_toRightOf="@id/profileIv">
+
+
+        <!--Fecha de asistencia-->
+            <TextView
+                android:id="@+id/asi_fecha"
+                android:text="@string/fecha"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--Cedula de Usuario-->
+            <TextView
+                android:id="@+id/asi_ced"
+                android:text="@string/cedula"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--Hora de Entrada del Usuario-->
+            <TextView
+                android:id="@+id/asi_entrada"
+                android:text="@string/hora_de_entrada"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--Hora de Salida del Usuario-->
+            <TextView
+                android:id="@+id/asi_salida"
+                android:text="@string/fecha"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
